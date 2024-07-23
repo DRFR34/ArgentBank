@@ -5,11 +5,11 @@ export const login = createAsyncThunk('auth/login', async (credentials, { reject
   try {
     const response = await axios.post('http://localhost:3001/api/v1/user/login', credentials);
 
-   console.log('response.data', response.data);
+    console.log('response.data', response.data);
     return response.data;
 
   } catch (error) {
-    console.log('Erreur de connexionA:',error.data.message);
+    console.log('Erreur de connexionA:', error.data.message);
     const errorMessage = error.data.message
     return rejectWithValue(errorMessage);
 
@@ -72,8 +72,8 @@ const authSlice = createSlice({
       .addCase(login.rejected, (state, action) => {
         state.status = 'failed';
         state.error = action.payload;
-         console.log('Erreur de connexion:',action.payload);
-        
+        console.log('Erreur de connexion:', action.payload);
+
       });
   },
 });
