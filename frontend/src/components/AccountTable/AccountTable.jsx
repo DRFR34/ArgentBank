@@ -89,7 +89,7 @@ export default function AccountTable({ onEditClick }) {
                 <tr className='tfoot__row'>
                     <td className='tfoot__row__cell' colSpan={2}>
                         <span className='tfoot__row__cell__title'>
-                            Solde final:
+                            Final balance:
                         </span>
                         <span className='tfoot__row__cell__total'>
                             {totalDeposits - totalWithdrawals}
@@ -97,7 +97,7 @@ export default function AccountTable({ onEditClick }) {
                     </td>
                     <td className='tfoot__row__cell'>
                         <span className='tfoot__row__cell__title'>
-                            Total des retraits:
+                            Total withdrawals:
                         </span>
                         <span className='tfoot__row__cell__total'>
                             {totalWithdrawals}
@@ -105,7 +105,7 @@ export default function AccountTable({ onEditClick }) {
                     </td>
                     <td className='tfoot__row__cell'>
                         <span className='tfoot__row__cell__title'>
-                            Total des dépôts:
+                            Total deposits:
                         </span>
                         <span className='tfoot__row__cell__total'>
                             {totalDeposits}
