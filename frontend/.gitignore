@@ -23,4 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 
-/.@old
+/@old
+/src copy
