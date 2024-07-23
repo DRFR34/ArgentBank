@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "date": "2024-05-24",
+    "description": "Salary deposit",
+    "withdrawal": 0,
+    "deposit": 2500.00
+  },
+  {
+    "id": 2,
+    "date": "2024-05-25",
+    "description": "Grocery shopping at Walmart",
+    "withdrawal": 120.35,
+    "deposit": 0
+  },
+  {
+    "id": 3,
+    "date": "2024-05-26",
+    "description": "Coffee at Starbucks",
+    "withdrawal": 5.25,
+    "deposit": 0
+  },
+  {
+    "id": 4,
+    "date": "2024-05-27",
+    "description": "Movie ticket",
+    "withdrawal": 14.50,
+    "deposit": 0
+  },
+  {
+    "id": 5,
+    "date": "2024-05-28",
+    "description": "Payment for internet bill",
+    "withdrawal": 65.00,
+    "deposit": 0
+  },
+  {
+    "id": 6,
+    "date": "2024-05-29",
+    "description": "Transfer to savings account",
+    "withdrawal": 500.00,
+    "deposit": 0
+  },
+  {
+    "id": 7,
+    "date": "2024-05-20",
+    "description": "Lunch with friends",
+    "withdrawal": 25.75,
+    "deposit": 0
+  },
+  {
+    "id": 8,
+    "date": "2024-05-21",
+    "description": "Gas station refill",
+    "withdrawal": 42.10,
+    "deposit": 0
+  },
+  {
+    "id": 9,
+    "date": "2024-05-18",
+    "description": "Online shopping purchase",
+    "withdrawal": 78.99,
+    "deposit": 0
+  },
+  {
+    "id": 10,
+    "date": "2024-05-17",
+    "description": "ATM withdrawal",
+    "withdrawal": 100.00,
+    "deposit": 0
+  },
+  {
+    "id": 11,
+    "date": "2024-05-22",
+    "description": "Restaurant dinner",
+    "withdrawal": 52.00,
+    "deposit": 0
+  },
+  {
+    "id": 12,
+    "date": "2024-05-23",
+    "description": "Movie rental",
+    "withdrawal": 3.99,
+    "deposit": 0
+  },
+  {
+    "id": 13,
+    "date": "2024-05-16",
+    "description": "Bill payment for electricity",
+    "withdrawal": 85.42,
+    "deposit": 0
+  },
+  {
+    "id": 14,
+    "date": "2024-05-15",
+    "description": "Gift for a friend",
+    "withdrawal": 35.00,
+    "deposit": 0
+  },
+  {
+    "id": 15,
+    "date": "2024-05-10",
+    "description": "Salary deposit",
+    "withdrawal": 0,
+    "deposit": 1800.00
+  },
+  {
+    "id": 16,
+    "date": "2024-05-13",
+    "description": "Payment for phone bill",
+    "withdrawal": 45.20,
+    "deposit": 0
+  }
+]
