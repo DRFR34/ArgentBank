@@ -106,8 +106,14 @@
 
     &__input {
         width: 100%;
+        border-radius:0.313rem ;
         padding: 0.5rem;
         font-size: 1.2rem;
         margin-bottom: 1rem;
+
+        &:focus {
+            outline: none;
+            border-color: $green-light-color;
+        }
     }
 }
