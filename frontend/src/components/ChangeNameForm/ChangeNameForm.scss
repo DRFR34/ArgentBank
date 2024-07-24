@@ -90,6 +90,7 @@
             &:disabled {
                 opacity: 0.5;
                 color: $grey-dark-color;
+                cursor:not-allowed;
             }
         }
 
