@@ -1,5 +1,6 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
+import './AccountOverview.scss'
 
 export default function AccountOverview({ acctType, acctNumber, acctAmount }) {
     const navTo = useNavigate();
@@ -17,20 +18,22 @@ export default function AccountOverview({ acctType, acctNumber, acctAmount }) {
 
 
     return (
-        <section className="account">
-            <div className="account-content-wrapper">
-                <h3 className="account-title">Argent Bank {acctType} (x{acctNumber})</h3>
-                <p className="account-amount">${acctAmount}</p>
-                <p className="account-amount-description">
-                {selectDescription(acctType)}
+        <article className="account">
+            <div className='account__textBox'>
+                <h3 className="account__title">Argent Bank {acctType} (x{acctNumber})</h3>
+                <p className="account__amount">${acctAmount}</p>
+                <p className="account__description">
+                    {selectDescription(acctType)}
                 </p>
             </div>
-            <div className="account-content-wrapper cta">
-                <button className="transaction-button"
+
+            <div className='account__BtnBox'>
+                <button className="account__BtnBox__Btn"
                     onClick={() => navTo('/transactions')}>
-                        View transactions
-                    </button>
+                    View transactions
+                </button>
             </div>
-        </section>
+
+        </article>
     )
 }
