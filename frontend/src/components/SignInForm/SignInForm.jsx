@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { login, toggleSaveToken } from '../../redux/features/auth/authSlice';
-
 import './SignInForm.scss';
 
+/**
+ * Form used for the user authentication.
+ * 
+ * @returns {JSX.Element} The SignInForm component.
+ */
 export default function SignInForm() {
     const dispatch = useDispatch();
     const navTo = useNavigate();
@@ -17,6 +22,11 @@ export default function SignInForm() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
+    /**
+     * Handles the form submission for signing in.
+     * 
+     * @param {Object} e - The event object.
+     */
     const submitSigninForm = (e) => {
         e.preventDefault();
         dispatch(login({ email, password }));
@@ -91,3 +101,10 @@ export default function SignInForm() {
         </section>
     );
 }
+
+SignInForm.propTypes = {
+    authStatus: PropTypes.string,
+    authError: PropTypes.string,
+    rememberUser: PropTypes.bool,
+    token: PropTypes.string,
+};
