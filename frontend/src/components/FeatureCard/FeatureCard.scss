@@ -1,12 +1,5 @@
 @import '../../utils/VarAndMixins.scss';
 
-@media (min-width: 920px) {
-    .features {
-        flex-direction: row;
-    }
-}
-
-
 .featureCard {
     padding: 2.5rem;
     display: flex;
@@ -31,5 +24,11 @@
     &__text {
         color: $black-color;
         text-align: center;
+    }
+}
+
+@media (min-width: 920px) {
+    .features {
+        flex-direction: row;
     }
 }
