@@ -1,9 +1,17 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { FaSort, FaSortDown, FaSortUp, FaPen } from 'react-icons/fa';
 import './AccountTable.scss';
 import { useSelector, useDispatch } from 'react-redux';
 import { setFilteredTransactionData } from '../../redux/features/transactionsSlice/transactionsSlice';
 
+/**
+ * AccountTable component displays a table of account transactions with sorting and editing functionality.
+ * 
+ * @param {Object} props - Component properties.
+ * @param {function} props.onEditClick - Function to handle edit button click for a transaction.
+ * @returns {JSX.Element} The AccountTable component.
+ */
 export default function AccountTable({ onEditClick }) {
     const dispatch = useDispatch();
     const tableData = useSelector((state) => state.transactions.filteredTransactionData);
@@ -13,13 +21,18 @@ export default function AccountTable({ onEditClick }) {
     const columns = [
         { label: "Date", accessor: "date" },
         { label: "Description", accessor: "description" },
-        { label: "withdrawal", accessor: "withdrawal" },
-        { label: "deposit", accessor: "deposit" }
+        { label: "Withdrawal", accessor: "withdrawal" },
+        { label: "Deposit", accessor: "deposit" }
     ];
 
     const totalWithdrawals = tableData.reduce((sum, row) => sum + (row.withdrawal || 0), 0).toFixed(2);
     const totalDeposits = tableData.reduce((sum, row) => sum + (row.deposit || 0), 0).toFixed(2);
 
+    /**
+     * Sorts the table data by the specified column.
+     * 
+     * @param {string} column - The column to sort by.
+     */
     const sortData = (column) => {
         const sortedData = [...tableData].sort((a, b) => {
             if (a[column] < b[column]) {
@@ -119,3 +132,7 @@ export default function AccountTable({ onEditClick }) {
         </table>
     );
 }
+
+AccountTable.propTypes = {
+    onEditClick: PropTypes.func.isRequired,
+};
