@@ -18,7 +18,7 @@ export default function EditTransactionModal({ transaction, onClose }) {
     }
     const handleSave = () => {
         //  TO DO : Will send updated transaction when v2 backend will be ready.
-        // dispatch(updateTransaction({ ...transaction, description })); 
+            // dispatch(updateTransaction({ ...transaction, description })); 
         console.log("Updated transaction:", { ...transaction, description });
         setIsEditing(false);
         onClose();
@@ -47,7 +47,7 @@ export default function EditTransactionModal({ transaction, onClose }) {
                 <br />
                 
                 <form className='infosAndNotes'>
-                    <label htmlFor="description">Your notes:</label>
+                    <label htmlFor="description">Notes:</label>
                     <textarea
                         value={description}       
                         onChange={(e) => handleEditing(e.target.value)}
