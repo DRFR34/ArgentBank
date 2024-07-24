@@ -37,9 +37,23 @@ export default function UserPage() {
             </div>
             <h2 className="sr-only">Accounts</h2>
 
-            <AccountOverview acctType="Checking" acctNumber="8349" acctAmount= "2,082.79" tansactionsSlug="/transactions" />
-            <AccountOverview acctType="Savings" acctNumber="6712" acctAmount="10,928.42" tansactionsSlug="/transactions" />
-            <AccountOverview acctType="Credit Card" acctNumber="8349" acctAmount="184,30" tansactionsSlug="/transactions" />
+            <AccountOverview 
+            acctType="Checking" 
+            acctNumber="8349" 
+            acctAmount= "2,082.79" 
+            />
+            <AccountOverview 
+            acctType="Savings" 
+            acctNumber="6712" 
+            
+            acctAmount="10,928.42" 
+            />
+
+            <AccountOverview 
+            acctType="Credit Card" 
+            acctNumber="8349" 
+            acctAmount="184,30" 
+            />
 
            
           </>
