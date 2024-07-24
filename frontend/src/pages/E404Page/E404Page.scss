@@ -1,0 +1,30 @@
+@import '../../utils/VarAndMixins.scss';
+
+.e404Box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+
+    &__title {
+        padding-bottom: 1rem;
+        font-size: 4rem;
+        color: $green-light-color;
+    }
+
+    &__text {
+        padding-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    &__link {
+        text-decoration: none;
+        background-color: $green-light-color;
+        color: $white-color;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+    }
+}
