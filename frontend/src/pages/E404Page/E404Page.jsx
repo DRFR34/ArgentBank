@@ -1,6 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './E404Page.scss';
+/**
+ * Renders the 404 error page.
+ *
+ * @return {JSX.Element} - A JSX element representing the 404 error page.
+ */
 export default function E404Page() {
   return (
     <div className='e404Box'>
