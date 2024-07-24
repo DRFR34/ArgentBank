@@ -1,7 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { FaSearch } from "react-icons/fa";
 import './SearchBar.scss';
 
+/**
+ * Component for searching through the transactions data.
+ *
+ * @param {Object} props - Component properties.
+ * @param {string} props.searchValue - The current value of the search input.
+ * @param {Function} props.setSearchValue - Function to update the search input value.
+ * @param {Function} props.onSearchClick - Function to handle the search button click.
+ * @returns {JSX.Element} The SearchBar component.
+ */
 export default function SearchBar({ searchValue, setSearchValue, onSearchClick }) {
     return (
         <div className='searchWrapper'>
@@ -28,3 +38,9 @@ export default function SearchBar({ searchValue, setSearchValue, onSearchClick }
         </div>
     );
 }
+
+SearchBar.propTypes = {
+    searchValue: PropTypes.string.isRequired,
+    setSearchValue: PropTypes.func.isRequired,
+    onSearchClick: PropTypes.func.isRequired,
+};
