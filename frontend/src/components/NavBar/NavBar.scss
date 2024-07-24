@@ -1,0 +1,51 @@
+@import '../../utils/VarAndMixins.scss';
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.188rem 1.25rem;
+
+  &__logo {
+    width: 12.5rem;
+  }
+
+  &__link {
+    padding-right: 0.5rem;
+    font-weight: bold;
+    color: $grey-dark-color;
+    text-decoration: none;
+
+    &.hidden {
+      display: none;
+    }
+
+    &__signOutBox {
+      display: flex;
+      align-items: end;
+
+      @media screen and (max-width: 720px) {
+        flex-direction: column;
+      }
+
+      &__nameWrapper {
+        padding-right: 0.5rem;
+      }
+
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:visited {
+      color: inherit;
+    }
+
+  }
+
+  &__span {
+    padding: 0 0.5rem 0 0;
+    font-weight: bold;
+  }
+}
