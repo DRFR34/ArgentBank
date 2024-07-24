@@ -1,5 +1,14 @@
 @import '../../utils/VarAndMixins.scss';
 
+.mainUserPg {
+  min-height: calc(100vh - 8.75rem);
+  padding: 1.5rem 0 13.75rem;
+  background-color: $eggplant-color;
+
+  @media (min-width: 920px) {
+    padding: 1.5rem 0 0.3rem;
+  }
+}
 
 .edit-button,
 .goToSignIn-button {
