@@ -1,0 +1,53 @@
+@import '../../utils/VarAndMixins.scss';
+
+
+.searchWrapper {
+    padding: 0 0 1.2rem 0;
+
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+        color: $white-color;
+        font-weight: 600;
+        font-size: 18px;
+
+        &__itemBox {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5px;
+
+
+        }
+
+        &__input {
+            width: 250px;
+            border: 1px solid $green-dark-color;
+            padding: 5px;
+            border-radius: 5px;
+            color: $green-dark-color;
+            font-size: 18px;
+            font-weight: 600;
+
+            &:focus {
+                outline: none;
+                border-color: $green-light-color;
+            }
+        }
+
+        &__btn {
+            background-color: $green-light-color;
+            color: $white-color;
+            border: none;
+            padding: 6px 10px;
+            border-radius: 5px;
+
+            &:hover {
+                transform: scale(1.1);
+                background-color: $green-dark-color;
+            }
+        }
+    }
+}
