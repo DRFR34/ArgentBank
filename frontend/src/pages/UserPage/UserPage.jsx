@@ -26,7 +26,7 @@ export default function UserPage() {
   }, [token, dispatch]);
 
   return (
-    <main className="main bg-dark">
+    <main className="mainUserPg">
       {!token ? (
         <NotConnected />
       ) : (
