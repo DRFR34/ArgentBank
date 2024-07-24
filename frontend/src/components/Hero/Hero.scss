@@ -1,0 +1,111 @@
+@import '../../utils/VarAndMixins.scss';
+
+.hero {
+
+    background-image: url('../../assets/img/bank-tree.jpeg');
+    background-position: -0px -50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    position: relative;
+
+    &__content {
+        position: absolute;
+        right: 3.125rem;
+        top: 2rem;
+        width: 13.75rem;
+        height: 9.375rem;
+        background: $white-color;
+
+        padding: 2rem;
+        text-align: left;
+        margin: 0 auto;
+        margin: 0 auto;
+        margin: 2rem;
+
+        &__subtitle {
+            font-weight: bold;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        &__text {
+            margin-bottom: 0;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .hero__content {
+        right: 1.2rem;
+        width: 40%;
+        height: 12rem;
+        margin: 0;
+        padding: 0.625rem;
+        opacity: 0.5;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+}
+
+@media (max-width: 390px) {
+    .hero {
+        background-position: -65px -50px;
+        height: 18.75rem;
+        position: relative;
+
+        &__content {
+            top: 3.438rem;
+            right: 0.625rem;
+
+            width: 55%;
+            height: 18.75rem;
+            height: 9.375rem;
+            margin: 0;
+            padding: 0.625rem;
+            opacity: 0.5;
+            opacity: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+    }
+
+}
+
+@media (min-width: 920px) {
+    .hero {
+        height: 25rem;
+        background-position: 0% 33%;
+
+        &__content {
+            height: auto;
+            position: absolute;
+            opacity: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            top: 50px;
+            right: 50px;
+            width: 22.75rem;
+            margin: 2rem;
+
+            &__subtitle {
+                font-size: 1.5rem;
+            }
+
+            &__text {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
