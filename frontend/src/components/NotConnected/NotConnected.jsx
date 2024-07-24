@@ -1,6 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+/**
+ * Displays a simple message indicating that the user is no longer connected.
+ *
+ * @return {JSX.Element} A React component.
+ */
 export default function NotConnected() {
     return (
 
