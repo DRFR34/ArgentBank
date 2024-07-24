@@ -1,0 +1,40 @@
+@import '../../utils/VarAndMixins.scss';
+
+
+.edit-button,
+.goToSignIn-button {
+  background-color: $green-light-color;
+  color: $white-color;
+  font-weight: bold;
+  padding: 0.625rem;
+
+  &:hover {
+    background-color: $green-dark-color;
+  }
+}
+
+.goToSignIn-button_link {
+  text-decoration: none;
+  color: $white-color;
+
+  &:hover {
+    cursor: default;
+  }
+}
+
+.header {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $white-color;
+
+  & h1 {
+    text-align: center;
+  }
+}
+
+.sorryEmoji {
+  font-size: 5rem;
+  color: $white-color;
+}
