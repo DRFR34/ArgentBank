@@ -1,0 +1,81 @@
+@import '../../utils/VarAndMixins.scss';
+
+.sign-in-content {
+  box-sizing: border-box;
+  background-color: $white-color;
+  width: 18.75rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.sign-in-header{
+  padding: 0 0 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sign-in-icon {
+  font-size: 1rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.input-wrapper label {
+  font-weight: bold;
+}
+
+.input-wrapper input {
+  padding: 0.313rem;
+  font-size: 1.2rem;
+}
+
+.input-remember {
+  display: flex;
+
+  &_checkbox {
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}
+
+.input-remember label {
+  margin-left: 0.25rem;
+}
+
+.sign-in-button {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  background-color: $green-light-color;
+  color: $white-color;
+
+  &:hover {
+    background-color: $green-dark-color;
+  } 
+
+  &:disabled {
+    opacity: 0.5;
+    color: $grey-dark-color;
+    cursor:not-allowed;
+  }
+}
+
+.auth-status {
+  margin-top: 1rem;
+}
+
+.auth-status .errorMsg {
+  color: $red-color;
+  text-align: center;
+}
