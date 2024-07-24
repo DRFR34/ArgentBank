@@ -1,0 +1,35 @@
+@import '../../utils/VarAndMixins.scss';
+
+@media (min-width: 920px) {
+    .features {
+        flex-direction: row;
+    }
+}
+
+
+.featureCard {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__icon {
+        width: 152px;
+        border: 10px solid $green-light-color;
+        border-radius: 50%;
+        padding: 1rem;
+    }
+
+    &__title {
+        color: $black-color;
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    &__text {
+        color: $black-color;
+        text-align: center;
+    }
+}
