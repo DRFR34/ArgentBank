@@ -8,8 +8,8 @@
     align-items: center;
 
     &__icon {
-        width: 152px;
-        border: 10px solid $green-light-color;
+        width: 9.5rem;
+        border: 0.625rem solid $green-light-color;
         border-radius: 50%;
         padding: 1rem;
     }
@@ -32,3 +32,4 @@
         flex-direction: row;
     }
 }
+
