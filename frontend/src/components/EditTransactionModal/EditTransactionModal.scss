@@ -1,0 +1,84 @@
+@import '../../utils/VarAndMixins.scss';
+
+
+.transactionModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+    & h2 {
+        color: $green-dark-color;
+    }
+
+    &__content {
+        background: $white-color;
+        padding: 1.25rem;
+        border-radius: 0.5rem;
+        width: 400px;
+        text-align: left;      
+
+        .infosAndNotes {
+            display: flex;
+            flex-direction: column;
+
+            & label{
+                margin: 0;
+                padding: 1.25rem 0 0;
+                font-weight: 600;
+                color: $green-dark-color;
+            }
+
+            & textarea {
+                width: 100%;
+                height: 50px;
+                margin: 0px 0 10px;
+                padding: 10px;
+                border: 1px solid $grey-Xlight-color;
+                border-radius: 0.25rem;
+                font-size: 1rem;
+
+                &:focus {
+                    outline: none;
+                    border-color: $green-light-color;
+                }   
+            }
+        }
+
+
+    }
+
+
+}
+
+
+.saveOrCancelBox {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+
+    &__btn {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        background: $green-light-color;
+        color: $white-color;
+
+        &:hover {
+            background: $green-dark-color;
+        }
+
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    }
+}
+
