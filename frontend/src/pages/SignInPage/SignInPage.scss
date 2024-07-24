@@ -1,6 +1,7 @@
 @import '../../utils/VarAndMixins.scss';
 
 .bg-dark {
+    min-height: calc(100vh - 8.75rem); 
     padding: 3.125rem 0 13.75rem;
 	background-color: $eggplant-color;
 }
