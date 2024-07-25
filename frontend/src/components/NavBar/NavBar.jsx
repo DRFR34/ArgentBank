@@ -66,7 +66,8 @@ export default function NavBar() {
                         <NavLink
                             className='nav__link'
                             onClick={() => dispatch(logout())}
-                            to="/sign-in"
+                            // to="/sign-in"
+                            to="/"
                         >
                             <i className="fa fa-sign-out"></i>
                             <span className='nav__span'>Sign out</span>
