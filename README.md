@@ -4,7 +4,7 @@ ArgentBank is the thirteenth project of the OpenClassrooms training “Javascrip
 
 <div align="center">
 <br>
-<img src="/frontend/src/assets/images/demoP13.gif" alt="ArgentBank" width="500" style="display: block; margin: 20px auto 0;" />
+<img src="/frontend/src/assets/img/demoP13.gif" alt="ArgentBank" width="500" style="display: block; margin: 20px auto 0;" />
 </div>
 
 ## Special thanks
