@@ -23,8 +23,6 @@ const authSlice = createSlice({
 
   initialState: {
     token: localStorage.getItem('token') || null,
-    firstName: localStorage.getItem('firstName') || null,
-    lastName: localStorage.getItem('lastName') || null,
     status: 'idle',
     error: null,
     wantBeStored: false,
@@ -35,8 +33,6 @@ const authSlice = createSlice({
       state.rememberUser = !state.rememberUser;
       if (state.rememberUser === false) {
         localStorage.removeItem('token');
-        localStorage.removeItem('firstName');
-        localStorage.removeItem('lastName');
       }
       console.log('toogleSaveToken→state.rememberUser', state.rememberUser);
     },
